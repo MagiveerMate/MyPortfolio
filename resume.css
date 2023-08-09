@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: #e74c3c;
+    margin: 10px 0;
+  }
+  
+  .name {
+    font-size: 40px;
+    color: #2ecc71;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tagline {
+    font-size: 30px;
+    color: #f39c12;
+    text-transform: uppercase;
+  }
+  
+  i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  p {
+    margin: 10px;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 40px;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(52, 152, 219, 0.8), 0 0 20px rgba(52, 152, 219, 0.6), 0 0 30px rgba(52, 152, 219, 0.4), 0 0 40px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Sections */
+  section.personal-details,
+  section.object,
+  section.edu,
+  section.atch,
+  section.skills,
+  section.education,
+  section.competencies,
+  section.experience {
+    padding: 30px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(34, 230, 188, 0.5), 0 0 50px rgba(34, 174, 230, 0.3), 0 0 100px rgba(34, 184, 230, 0.2);
+  }
+  
+  /* Links */
+  a {
+    color: #9b59b6;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(155, 89, 182, 0.7);
+  }
+  
+  a:hover {
+    color: #8e44ad;
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    .container {
+      padding: 15px;
+    }
+  }
+  
+  /* Background Styles */
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 4%;
+    background-color: hsl(256, 100%, 5%);
+    font: 30px sans-serif;
+    height: 100%;
+  }
+  
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Fancy List Styles */
+  ul li {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    background-color: #e74c3c; /* Adjust the color as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  
+  

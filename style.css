@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: lightblue;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Navigation */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 4%;
+    background-color: hsl(256, 100%, 5%); font: 30px sans-serif;
+    height: 100%;
+  }
+  
+canvas { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+  
+  .navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    background-image: linear-gradient(to right,#5ddcff,
+    #3c67e3 ,
+    #4e00c2 );
+    width: 166px;
+    height: 100%;
+    position: fixed;   
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    top: 20px; /* You can adjust this value as needed */
+  }
+  
+  .navbar-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -1;
+    top: 0;
+  }
+  
+  /* Add a class to the content div you want to push to the bottom */
+  .push-to-bottom {
+    position: absolute;
+    bottom: 20px; /* Adjust the bottom value to move the content up */
+    width: 50%; /* Adjust the width value as needed */
+    padding-left: 50px;
+    text-align: center;
+    
+  }
+  
+  .navbar-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Add some padding to create space around the logo */
+    padding-left:10px;
+  }
+  
+  .navbar-logo {
+    max-width: 120px; /* Set a max-width to control the logo size */
+    height: auto; /* Keep the aspect ratio of the logo */
+    position: absolute;
+    top: 0; /* Position the logo at the top of the .navbar element */
+    
+  }
+  .navbar,
+  .navbar ul {
+    padding: 0;
+    margin: 0;
+  } 
+  #navbar_icon {
+    /* Styles for the icon */
+    font-size: 24px;
+    cursor: pointer;
+    color: lightblue;
+  }
+  
+  #navbar_icon:hover {
+    color: black;
+  }
+  
+  .navbar a {
+    color: lightblue;
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  
+  .navbar ul a:hover {
+    font-size: 25px;
+    color: darkblue;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Main Sections */
+  section {
+    padding: 40px 0;
+  }
+  
+  section h1 {
+    font-size: 36px;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Start Section */
+  #start {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 4%;
+    text-align: center;
+    color: white;
+  }
+  
+  #start .top {
+    padding-top: 15px;
+    
+  }
+  .top{
+    margin-right: 5%;
+  }
+  #start h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #start h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  #stBtn{
+    margin-left: 0.5%;
+    background-image: linear-gradient(to left,#5ddcff,
+  #3c67e3 ,
+  #4e00c2 );
+  }
+  #stBtn :hover{
+    background-image: linear-gradient(to right,#5ddcff,
+    #3c67e3 ,
+    #4e00c2 );
+  }
+  /* About Section */
+  #about img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .abt {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .abt h2 {
+    order: 1;
+  }
+  
+  .abt p {
+    order: 2;
+  }
+  
+  
+  /* Projects Section */
+  .projects .row {
+    margin-bottom: 20px;
+  }
+  
+  .projects img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .projects h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+ html{
+  scroll-behavior: smooth;
+ }
+ 
+  
+  
+  
+  /* Styles for the "btn" class */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #007bff; /* Change this to the desired background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to left,#5ddcff,
+    #3c67e3 ,
+    #4e00c2 ); /* Change this to the desired hover background color */
+}
+
+.btn:active {
+  background-image: linear-gradient(to right,#5ddcff,
+  #3c67e3 ,
+  #4e00c2 ); /* Change this to the desired active background color */
+  /* You can add additional styles for the active state here if needed */
+}
+  
+  /* Info Section */
+ 
+  
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .social a {
+    color: #212534;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 0.5rem;
+  }
+  
+  .col {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .col .card {
+    width: 70%;
+  }
+  
+  .col .card-body h4 {
+    font-size: 1.3em;
+  }
+  
+  .col .card-body .text {
+    margin-bottom: 1rem;
+  }
+  /* Style for the social media icons */
+/* Style for the social media icons */
+.twitter,
+.facebook,
+.github {
+  width: 50px; /* Adjust the width and height as needed */
+  height: 50px;
+  margin: 0 5px; /* Adjust the spacing between the icons */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  
+}
+
+/* Bouncing hover effect */
+.twitter:hover,
+.facebook:hover,
+.github:hover {
+  animation: bounce 0.8s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the bounce height as needed */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+#contact {
+  
+  padding: 10px; /* Add some padding to make the content not stick to the border */
+}
+/* Apply a general style to the portfolio section */
+#portfolio {
+  padding: 40px 0;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-card-holder {
+  flex: 0 0 100%; /* Set the initial width to 100% to create a single column layout */
+  max-width: 100%; /* Allow the column to take up the full width on smaller screens */
+  padding: 10px;
+}
+
+.portfolio-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Use media queries to adjust the layout for different screen sizes */
+@media (min-width: 768px) {
+  .portfolio-card-holder {
+    flex: 0 0 50%; /* Two columns on medium-sized screens */
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-card-holder {
+    flex: 0 0 33.33%; /* Three columns on large-sized screens */
+    max-width: 33.33%;
+  }
+}
+
+/* Additional styles for better visual appearance */
+.portfolio-img-desc {
+  text-align: center;
+}
+#imgs{
+  height: 100%;
+  width: 100%;
+}
+.img{
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  border-radius: 10%;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
